@@ -1,0 +1,53 @@
+User API
+Tokens
+Manage access and
+permissions for your
+accounts, sites, and
+products
+Documentation Create Token
+Cloudflare recommends using Account API Tokens if you
+prefer credentials that are not associated with users.
+API Tokens
+API Keys
+Keys used to access Cloudflare APIs.
+ 
+BrowserOSAPI Account.Cloudflare Pages, Account.W
+Edit Cloudflare Workers Account.Workers Agents Configuratio
+chatter-deploy Account.Cloudflare Tunnel, Zone.Zone
+chatter-cloudflared-2 Account.Cloudflare Tunnel, Zone.DNS
+chatter-cloudflared Account.Cloudflare Tunnel, Zone.DNS
+Token name Permissions
+Global API Key
+Key name
+Change View
+My Profile
+Q u ic k  s e a rc h ...   K
+C t r l
+S e ttin g s
+A c c e s s  M a n a g e m e n t
+A P I T o k e n s
+Q u ic k  s e a rc h ...   K
+C t r l
+S e ttin g s
+A c c e s s  M a n a g e m e n t
+A P I T o k e n s
+
+Support System Status Careers Terms of Use
+Report Security Issues Privacy Policy Cookie Preferences
+© 202 Cloudflare, Inc.
+ 
+Origin CA Key Deprecated)
+The Origin CA Key is deprecated. Please generate Account API 
+Key name
+My Profile
+Q u ic k  s e a rc h ...   K
+C t r l
+S e ttin g s
+A c c e s s  M a n a g e m e n t
+A P I T o k e n s
+Q u ic k  s e a rc h ...   K
+C t r l
+S e ttin g s
+A c c e s s  M a n a g e m e n t
+A P I T o k e n s
+

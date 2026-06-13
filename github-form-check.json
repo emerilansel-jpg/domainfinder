@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { const nameInput = document.querySelector('input[data-testid=repository-name-input]') || document.querySelector('input[name=repository\\[name\\]]') || [...document.querySelectorAll('input')].find(i => i.placeholder && i.placeholder.includes('name')) || [...document.querySelectorAll('input')].find(i => i.getAttribute('aria-label') && i.getAttribute('aria-label').includes('Repository')); const ownerBtn = [...document.querySelectorAll('button')].find(b => b.textContent && b.textContent.includes('emerilansel-jpg')); const publicBtn = [...document.querySelectorAll('button')].find(b => b.textContent && b.textContent.includes('Public')); const createBtn = [...document.querySelectorAll('button')].find(b => b.textContent && b.textContent.includes('Create repository')); return {nameInput: nameInput ? {tag: nameInput.tagName, type: nameInput.type, placeholder: nameInput.placeholder, id: nameInput.id, class: nameInput.className.substring(0,50)} : null, ownerBtn: !!ownerBtn, publicBtn: !!publicBtn, createBtn: !!createBtn}; })()"
+  },
+  "session": "github2"
+}

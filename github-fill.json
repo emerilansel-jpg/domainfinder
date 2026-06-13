@@ -1,0 +1,8 @@
+{
+  "action": "fill",
+  "args": {
+    "selector": "#repository-name-input",
+    "value": "domainfinder"
+  },
+  "session": "github2"
+}

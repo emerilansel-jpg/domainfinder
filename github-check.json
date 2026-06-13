@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { const title = document.title; const form = document.querySelector('form[action=\"/new\"]'); const repoNameInput = document.querySelector('input[name=\"repository[name]\"]'); const createBtn = [...document.querySelectorAll('button')].find(b => b.textContent && b.textContent.includes('Create repository')); return {title, formFound: !!form, repoNameFound: !!repoNameInput, createBtnFound: !!createBtn, createBtnText: createBtn ? createBtn.textContent.trim() : null}; })()"
+  },
+  "session": "github2"
+}

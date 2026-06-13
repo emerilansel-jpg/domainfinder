@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(async () => { try { const resp = await fetch('/api/v4/zones/63fe5089ec50acfd1df25bf09ff38a9d/dns_records?type=CNAME&name=domainfinder.pesat.ai', { headers: { 'Accept': 'application/json' } }); const data = await resp.json(); return {status: resp.status, count: data.result_info ? data.result_info.count : 0, records: data.result ? data.result.map(r => ({type: r.type, name: r.name, content: r.content})) : []}; } catch(e) { return {error: e.message}; } })()"
+  },
+  "session": "cf-dns3"
+}

@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { window.scrollTo(0, document.body.scrollHeight); return {scrolled: true, height: document.body.scrollHeight}; })()"
+  },
+  "session": "github"
+}

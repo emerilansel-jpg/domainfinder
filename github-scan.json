@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { const inputs = [...document.querySelectorAll('input')].map((i, idx) => ({idx, tag: i.tagName, type: i.type, name: i.name, placeholder: i.placeholder, id: i.id, 'aria-label': i.getAttribute('aria-label'), class: i.className.substring(0,50)})); const buttons = [...document.querySelectorAll('button')].map((b, idx) => ({idx, text: b.textContent.trim().substring(0,40)})); return {inputs: inputs.slice(0,10), buttons: buttons.filter(b => b.text.length > 0).slice(0,10)}; })()"
+  },
+  "session": "github"
+}

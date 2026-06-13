@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { const potentialBtn = [...document.querySelectorAll('button')].find(b => b.textContent && b.textContent.includes('potential-octo-palm-tree')); return potentialBtn ? {tag: potentialBtn.tagName, class: potentialBtn.className.substring(0,60), parentHTML: potentialBtn.parentElement ? potentialBtn.parentElement.innerHTML.substring(0,300) : null} : {found: false}; })()"
+  },
+  "session": "github2"
+}

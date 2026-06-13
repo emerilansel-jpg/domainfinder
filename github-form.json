@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { const nameInput = document.querySelector('input[name=\"repository[name]\"]') || document.querySelector('input[data-testid=\"repository-name-input\"]') || [...document.querySelectorAll('input')].find(i => i.placeholder && i.placeholder.includes('name')); const descInput = document.querySelector('input[name=\"repository[description]\"]') || [...document.querySelectorAll('input')].find(i => i.placeholder && i.placeholder.includes('description')); const createBtn = [...document.querySelectorAll('button')].find(b => b.textContent && b.textContent.includes('Create repository')); return {name: nameInput ? {tag: nameInput.tagName, found: true} : {found: false}, desc: descInput ? {found: true} : {found: false}, create: createBtn ? {tag: createBtn.tagName, text: createBtn.textContent.trim().substring(0,30), found: true} : {found: false}}; })()"
+  },
+  "session": "github"
+}

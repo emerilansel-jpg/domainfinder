@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { const links = [...document.querySelectorAll('a, button')].map((el, i) => ({i, text: el.textContent.trim().substring(0,50), tag: el.tagName})); return {links: links.filter(l => l.text.includes('Token') || l.text.includes('Key') || l.text.includes('Create'))}; })()"
+  },
+  "session": "cf-tokens"
+}

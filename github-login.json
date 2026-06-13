@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { const avatar = document.querySelector('img[alt*=\"@\"]'); const login = avatar ? avatar.getAttribute('alt') : null; const nav = document.querySelector('meta[name=\"user-login\"]'); const userLogin = nav ? nav.getAttribute('content') : null; return {login: login, userLogin: userLogin, loggedIn: !!document.querySelector('a[href*=\"logout\"]') || !!document.querySelector('form[action*=\"logout\"]')}; })()"
+  },
+  "session": "github2"
+}

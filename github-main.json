@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { const main = document.querySelector('main') || document.querySelector('[role=main]'); const forms = [...document.querySelectorAll('form')].map((f, i) => ({i, action: f.action, innerHTML: f.innerHTML.substring(0,500)})); return {mainFound: !!main, mainHTML: main ? main.innerHTML.substring(0,1000) : 'no main', forms}; })()"
+  },
+  "session": "github"
+}

@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(async () => { try { const resp = await fetch('https://api.github.com/user', { credentials: 'include', headers: { 'Accept': 'application/json' } }); const data = await resp.json(); return {status: resp.status, login: data.login, id: data.id, message: data.message}; } catch(e) { return {error: e.message}; } })()"
+  },
+  "session": "github2"
+}

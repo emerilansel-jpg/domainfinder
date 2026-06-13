@@ -1,0 +1,1 @@
+{"action":"evaluate","args":{"code":"(() => { const select = document.querySelector('select') || document.querySelector('[role=combobox]'); if (select) { select.value = 'CNAME'; select.dispatchEvent(new Event('change')); return {value: select.value, tag: select.tagName}; } return {found: false}; })()"},"session":"cf-dns"}

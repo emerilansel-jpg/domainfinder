@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { const label = [...document.querySelectorAll('label')].find(l => l.textContent && l.textContent.includes('Repository name')); const input = label ? document.querySelector('#' + label.getAttribute('for')) || label.querySelector('input') || label.nextElementSibling?.querySelector('input') || [...label.parentElement.querySelectorAll('input')].find(i => i.type === 'text') : null; return {labelFound: !!label, inputFound: !!input, inputTag: input ? input.tagName : null, inputType: input ? input.type : null, inputId: input ? input.id : null, inputClass: input ? input.className.substring(0,50) : null}; })()"
+  },
+  "session": "github2"
+}

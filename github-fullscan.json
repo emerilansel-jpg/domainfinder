@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { const allInputs = [...document.querySelectorAll('input, textarea')].map((i, idx) => ({idx, tag: i.tagName, type: i.type, name: i.name, placeholder: i.placeholder, id: i.id, class: i.className.substring(0,60)})); const allTextareas = [...document.querySelectorAll('textarea')].map((i, idx) => ({idx, tag: i.tagName, name: i.name, placeholder: i.placeholder, id: i.id})); return {totalInputs: allInputs.length, inputs: allInputs, textareas: allTextareas}; })()"
+  },
+  "session": "github"
+}

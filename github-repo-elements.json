@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { const allElements = [...document.querySelectorAll('*')].map((el, i) => ({i, tag: el.tagName, text: el.textContent ? el.textContent.trim().substring(0,40) : '', class: el.className ? el.className.substring(0,40) : ''})); const repoElements = allElements.filter(e => e.text.includes('Repository') || e.text.includes('potential') || e.text.includes('octo') || e.text.includes('palm') || e.text.includes('tree')); return {repoElements: repoElements.slice(0,10)}; })()"
+  },
+  "session": "github2"
+}
