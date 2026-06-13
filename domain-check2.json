@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { try { const root = document.getElementById('root'); const errs = window.__errors || []; return {rootHTML: root ? root.innerHTML.substring(0,200) : 'no root', rootChildCount: root ? root.children.length : 0, bodyChildren: document.body.children.length, windowRouterVersion: window.__reactRouterVersion, hasRouterProvider: typeof window !== 'undefined' && !!document.querySelector('[data-testid=router-provider]'), errors: errs}; } catch(e) { return {error: e.message}; } })()"
+  },
+  "session": "domain-check"
+}

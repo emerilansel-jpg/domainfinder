@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { const root = document.getElementById('root'); return {rootHTML: root ? root.innerHTML.substring(0,200) : 'no root', childCount: root ? root.children.length : 0, title: document.title}; })()"
+  },
+  "session": "domfindr3-test"
+}

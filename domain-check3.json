@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { const r = document.getElementById('root'); return {rootHTML: r ? r.innerHTML.substring(0,200) : 'no root', childCount: r ? r.children.length : 0, title: document.title, bodyText: document.body.innerText.substring(0,100)}; })()"
+  },
+  "session": "domain-check2"
+}

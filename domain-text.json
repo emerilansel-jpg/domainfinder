@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { const errorEl = document.querySelector('h2') || document.querySelector('pre') || document.querySelector('p'); return {errorText: errorEl ? errorEl.textContent.substring(0,300) : 'no error el', allText: document.body.innerText.substring(0,500)}; })()"
+  },
+  "session": "domain-check"
+}

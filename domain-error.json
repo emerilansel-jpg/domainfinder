@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { const errors = []; const originalError = console.error; console.error = (...args) => { errors.push(args.map(a => String(a)).join(' ').substring(0,200)); originalError.apply(console, args); }; return {reactExists: typeof React !== 'undefined', reactDOMExists: typeof ReactDOM !== 'undefined', reactRouterExists: typeof window !== 'undefined' && !!window.__REACT_ROUTER_VERSION__, windowKeys: Object.keys(window).filter(k => k.includes('React') || k.includes('router') || k.includes('Router')).slice(0,10), hasError: errors.length > 0, errors: errors.slice(0,5)}; })()"
+  },
+  "session": "domain-check"
+}

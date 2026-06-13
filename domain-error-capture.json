@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { const origError = console.error; const errs = []; console.error = (...args) => { errs.push(args.map(a => String(a)).join(' ').substring(0,300)); origError.apply(console, args); }; window.onerror = (msg, url, line, col, err) => { errs.push('onerror:' + String(msg).substring(0,200)); return true; }; window.onunhandledrejection = (e) => { errs.push('unhandledrejection:' + String(e.reason).substring(0,200)); }; setTimeout(() => { const root = document.getElementById('root'); return {rootHTML: root ? root.innerHTML.substring(0,200) : 'no root', childCount: root ? root.children.length : 0, errors: errs.slice(0,10)}; }, 3000); return {setup: true}; })()"
+  },
+  "session": "domain-check"
+}

@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { const r = document.getElementById('root'); return {reactRouterVersion: window.__reactRouterVersion, reactExists: typeof React !== 'undefined', reactDOMExists: typeof ReactDOM !== 'undefined', rootExists: !!r, bodyText: document.body.innerText.substring(0,100)}; })()"
+  },
+  "session": "domfindr3-test"
+}

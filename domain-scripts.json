@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { try { const scripts = [...document.querySelectorAll('script')].map(s => ({src: s.src, type: s.type})); const loadedScripts = scripts.filter(s => s.src.includes('index-')); return {scripts: loadedScripts, allScripts: scripts.slice(0,5), baseURI: document.baseURI, locationHref: window.location.href}; } catch(e) { return {error: e.message}; } })()"
+  },
+  "session": "domain-check"
+}

@@ -1,0 +1,7 @@
+{
+  "action": "evaluate",
+  "args": {
+    "code": "(() => { const errs = []; window.onerror = function(msg, url, line, col, err) { errs.push(String(msg).substring(0,200)); }; window.onunhandledrejection = function(e) { errs.push(String(e.reason).substring(0,200)); }; setTimeout(() => { return {errors: errs, windowKeys: Object.keys(window).filter(k => k.includes('Router') || k.includes('react') || k.includes('React')).slice(0,10), rootContent: document.getElementById('root') ? document.getElementById('root').innerHTML.substring(0,200) : 'no root'}; }, 2000); })()"
+  },
+  "session": "domain-check"
+}
